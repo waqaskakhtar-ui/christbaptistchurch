@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christ Baptist Church | Hubbard, Oregon</title>
+  <meta
+    name="description"
+    content="Christ Baptist Church is a small Baptist church in Hubbard, Oregon, dedicated to preaching God's Word, traditional Sunday worship at 10:30 AM, and ministering to our community."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Kumbh+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Transparent Overlay Header -> Dark Sticky Bar on Scroll -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Christ Baptist Church Home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M12 2v20" />
+            <path d="M6 9h12" />
+            <circle cx="12" cy="9" r="7" stroke-opacity="0.45" />
+          </svg>
+        </span>
+        <span class="brand-name">Christ Baptist</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <a href="#top" class="nav-link is-active">Home</a>
+        <a href="#worship" class="nav-link">Services</a>
+
+        <div class="nav-dropdown">
+          <button type="button" class="nav-dropdown-trigger" aria-haspopup="true">
+            About Us
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="#welcome" class="dropdown-item" role="menuitem">
+              Who We Are
+              <span>Hubbard, Oregon church family</span>
+            </a>
+            <button type="button" class="dropdown-item" data-open-modal="covenantModal" role="menuitem">
+              Church Covenant
+              <span>Our shared commitment</span>
+            </button>
+            <button type="button" class="dropdown-item" data-open-modal="confessionModal" role="menuitem">
+              1689 London Confession
+              <span>Historic Reformed Baptist faith</span>
+            </button>
+          </div>
+        </div>
+
+        <a href="#give" class="nav-link">Donation</a>
+        <a href="#visit" class="nav-link">Plan a Visit</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:5037326491" class="header-phone">503-732-6491</a>
+        <button type="button" class="btn btn--ochre btn--sm" data-open-modal="visitModal">
+          Get in Touch
+        </button>
+      </div>
+
+      <button
+        type="button"
+        class="mobile-toggle"
+        id="mobileToggle"
+        aria-label="Toggle Menu"
+        aria-expanded="false"
+        aria-controls="mobileDrawer"
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="7" x2="21" y2="7" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="17" x2="21" y2="17" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="mobile-drawer-links">
+        <a href="#top" class="mobile-drawer-link">Home</a>
+        <a href="#welcome" class="mobile-drawer-link">About Us</a>
+        <a href="#worship" class="mobile-drawer-link">Sunday Worship (10:30 AM)</a>
+        <button type="button" class="mobile-drawer-link" data-open-modal="covenantModal">Church Covenant</button>
+        <button type="button" class="mobile-drawer-link" data-open-modal="confessionModal">1689 London Confession</button>
+        <a href="#give" class="mobile-drawer-link">Donation</a>
+        <a href="#visit" class="mobile-drawer-link">Plan a Visit</a>
+      </div>
+      <button type="button" class="btn btn--ochre" style="width: 100%;" data-open-modal="visitModal">
+        Get in Touch
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- 1. Full-Bleed Dark Photographic Hero (Faithful Signature) -->
+    <section class="hero-full">
+      <img
+        class="hero-bg"
+        src="assets/images/hero-real-sanctuary.jpg"
+        alt="Inside Christ Baptist Church sanctuary in Hubbard, Oregon"
+      />
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="container hero-content-wrap">
+        <h1 class="hero-title">Preaching God’s Word.<br />Loving our community.</h1>
+        <p class="hero-subline">
+          A small Baptist church in Hubbard, Oregon—gathering every Sunday at 10:30 AM for reverent
+          worship, Scripture reading, prayer, and exegetical preaching.
+        </p>
+        <div class="hero-actions">
+          <button type="button" class="btn btn--ochre" data-open-modal="visitModal">
+            Plan Your Visit
+          </button>
+          <a href="#give" class="hero-text-link">Give Online &rarr;</a>
+        </div>
+      </div>
+
+      <div class="container hero-bottom-bar">
+        <div class="hero-bottom-title">United in faith and care &middot; Sundays 10:30 AM</div>
+        <a href="#welcome" class="hero-scroll-link">
+          Scroll Down
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <polyline points="19 12 12 19 5 12" />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- 2. Editorial Asymmetric Introduction (Faithful Step 39-43 Layout) -->
+    <section class="section" id="welcome">
+      <div class="container intro-grid">
+        <div class="intro-photo-tall">
+          <img
+            src="assets/images/about-fellowship.jpg"
+            alt="Open Bible and warm church community fellowship"
+          />
+        </div>
+
+        <div class="intro-right">
+          <div class="eyebrow">A Beacon for Spiritual Growth</div>
+          <h2>Fostering faith and connection here</h2>
+          <p>
+            Welcome to Christ Baptist Church! We are a small Baptist church in Hubbard, Oregon,
+            dedicated to preaching God’s Word and ministering to our community. Conducting traditional
+            Sunday services throughout the year, we walk together in brotherly love under Scripture.
+          </p>
+
+          <div class="intro-actions">
+            <button type="button" class="btn btn--ochre btn--sm" data-open-modal="covenantModal">
+              Our Church Covenant
+            </button>
+            <button type="button" class="btn btn--outline-dark btn--sm" data-open-modal="confessionModal">
+              1689 Confession
+            </button>
+          </div>
+
+          <div class="intro-photo-secondary">
+            <img
+              src="assets/images/community-welcome.jpg"
+              alt="Church greeter welcoming a visiting family outside our doors"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Two-Tone Green Headline + 4 Clean Bordered Service Cards (Faithful Step 47-49) -->
+    <section class="section" style="padding-top: 24px;" id="worship">
+      <div class="container">
+        <div class="services-header-grid">
+          <h2>
+            Preaching God’s Word clearly.
+            <span class="text-green">Growing together in faith each week</span>
+            to nurture hearts and minds
+          </h2>
+          <p>
+            Everything at Christ Baptist Church is centered on Scripture, reverent worship, and genuine
+            care for families and neighbors across Hubbard and Woodburn.
+          </p>
+        </div>
+
+        <div class="services-cards-grid">
+          <article class="service-card">
+            <div class="service-card-icon" aria-hidden="true">
+              <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="9" />
+                <polyline points="12 7 12 12 15.5 14" />
+              </svg>
+            </div>
+            <h3>Sunday worship services</h3>
+            <p>
+              Join us in person every Sunday at 10:30 AM for Bible readings, singing, prayer, and
+              exegetical preaching.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card-icon" aria-hidden="true">
+              <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+              </svg>
+            </div>
+            <h3>Biblical teaching &amp; study</h3>
+            <p>
+              Thoughtful teaching focused on helping believers deepen their knowledge of Christianity
+              and God’s Word.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card-icon" aria-hidden="true">
+              <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3>Confessional heritage</h3>
+            <p>
+              Grounded in the 1689 Second London Baptist Confession and united together by a clear
+              Church Covenant.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card-icon" aria-hidden="true">
+              <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+              </svg>
+            </div>
+            <h3>Community care &amp; prayer</h3>
+            <p>
+              Walking together in brotherly love—praying for one another and sharing the Gospel in our
+              neighborhood.
+            </p>
+          </article>
+        </div>
+
+        <div class="centered-cta">
+          <button type="button" class="btn btn--ochre" data-open-modal="visitModal">
+            Plan a Visit
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Dark #3B3830 Vision & Milestones Band (Faithful Step 49-51) -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="dark-vision-top">
+          <div class="dark-vision-photo">
+            <img
+              src="assets/images/hero-sanctuary.jpg"
+              alt="Traditional sanctuary pews and wooden pulpit"
+            />
+          </div>
+
+          <div>
+            <div class="eyebrow eyebrow--light">Our Heart &amp; Heritage</div>
+            <h2 class="h2-display">Rooted in historic Baptist faith &amp; scripture</h2>
+            <p>
+              We believe the local church is meant to be an anchor of truth and love. Every Lord’s Day
+              we gather simply and reverently without distraction—reading Scripture, lifting our voices
+              in hymns, praying together, and opening God’s Word.
+            </p>
+            <button type="button" class="dark-link" data-open-modal="covenantModal">
+              Read our Church Covenant
+            </button>
+
+            <div class="dark-subblock">
+              <h4>Anchored in the 1689 Confession</h4>
+              <p>
+                Our doctrine follows the historic Second London Baptist Confession of Faith—32 chapters
+                summarizing historic Christian belief and biblical church life.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="milestones-grid">
+          <div>
+            <div class="milestone-num">10:30</div>
+            <div class="milestone-label">Sunday Morning Worship (AM)</div>
+          </div>
+          <div>
+            <div class="milestone-num">1689</div>
+            <div class="milestone-label">Second London Confession</div>
+          </div>
+          <div>
+            <div class="milestone-num">9</div>
+            <div class="milestone-label">Church Covenant Commitments</div>
+          </div>
+          <div>
+            <div class="milestone-num">97032</div>
+            <div class="milestone-label">Serving Hubbard &amp; Woodburn, OR</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. GiveWP Online Donation Section on #3B3830 with Gold Line Art (Step 53) -->
+    <section class="giving-section" id="give">
+      <div class="giving-line-art" aria-hidden="true">
+        <svg width="420" height="420" viewBox="0 0 400 400" fill="none" stroke="#E0A35F" stroke-width="1.3">
+          <path d="M20 340 C60 240, 120 200, 140 130 C155 85, 220 75, 235 125 C250 175, 200 220, 260 270 C300 300, 350 280, 380 350" />
+          <path d="M60 360 C110 270, 180 250, 210 175 C230 120, 275 135, 275 185 C275 235, 320 260, 360 320" />
+        </svg>
+        <svg width="420" height="420" viewBox="0 0 400 400" fill="none" stroke="#E0A35F" stroke-width="1.3">
+          <path d="M380 260 C310 180, 250 160, 220 90 C195 35, 130 65, 145 125 C160 185, 215 215, 145 280 C95 325, 50 310, 20 365" />
+          <circle cx="240" cy="180" r="65" stroke-opacity="0.6" />
+        </svg>
+      </div>
+
+      <div class="container">
+        <div class="giving-header-center">
+          <div class="eyebrow eyebrow--light">Support Our Mission Today</div>
+          <h2>Join our giving</h2>
+        </div>
+
+        <div class="givewp-card">
+          <div class="givewp-card-head">How much would you like to donate today?</div>
+
+          <div class="givewp-card-body">
+            <div id="donationFormBody">
+              <p class="givewp-intro">
+                All donations directly support our church ministry, care for neighbors in need, and the
+                spread of the Gospel—giving visitors and members a hassle-free way to give online.
+              </p>
+
+              <form id="donationForm">
+                <div class="givewp-meta-row">
+                  <div class="givewp-label">Donation Amount <span>*</span></div>
+                  <div class="givewp-controls-inline">
+                    <div class="freq-toggle" role="group" aria-label="Giving frequency">
+                      <button type="button" class="freq-btn is-active" data-freq="One-Time">One-Time</button>
+                      <button type="button" class="freq-btn" data-freq="Monthly">Monthly</button>
+                    </div>
+                    <span class="currency-badge">USD $</span>
+                  </div>
+                </div>
+
+                <label class="sr-only" for="fundSelect" style="position:absolute;left:-9999px;">Ministry Fund</label>
+                <select id="fundSelect" class="fund-select">
+                  <option value="General Tithes &amp; Offerings">Fund: General Tithes &amp; Offerings</option>
+                  <option value="Local Benevolence &amp; Relief">Fund: Local Benevolence &amp; Relief</option>
+                  <option value="Missions &amp; Gospel Outreach">Fund: Missions &amp; Gospel Outreach</option>
+                </select>
+
+                <div class="givewp-amount-grid">
+                  <button type="button" class="givewp-amount-btn is-active" data-amount="10">$10.00</button>
+                  <button type="button" class="givewp-amount-btn" data-amount="25">$25.00</button>
+                  <button type="button" class="givewp-amount-btn" data-amount="50">$50.00</button>
+                  <button type="button" class="givewp-amount-btn" data-amount="100">$100.00</button>
+                  <button type="button" class="givewp-amount-btn" data-amount="250">$250.00</button>
+                  <button type="button" class="givewp-amount-btn" data-amount="500">$500.00</button>
+                </div>
+
+                <input
+                  type="number"
+                  min="1"
+                  step="1"
+                  id="customAmount"
+                  class="givewp-custom-input"
+                  placeholder="Enter custom amount"
+                  aria-label="Enter custom donation amount"
+                />
+
+                <button type="submit" id="donationSubmitBtn" class="givewp-submit-btn">
+                  Donate $10.00 now &rarr;
+                </button>
+
+                <div class="givewp-secure-foot">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6z" />
+                  </svg>
+                  100% Secure Donation
+                </div>
+              </form>
+            </div>
+
+            <!-- Interactive Receipt Confirmation State -->
+            <div class="giving-receipt" id="donationReceipt" style="display: none;">
+              <span class="receipt-badge">Interactive Visitor Checkout Preview</span>
+              <h3 style="font-size: 22px; margin-bottom: 8px;">Thank you for your generosity!</h3>
+              <p style="font-size: 14px; color: #5b5650;">
+                This previews how effortlessly a visitor or congregation member completes a gift directly
+                on your site (ready to connect to Stripe, Tithe.ly, or PayPal).
+              </p>
+              <div class="receipt-box">
+                <div><strong>Amount:</strong> <span id="receiptAmount">$10.00</span></div>
+                <div><strong>Frequency:</strong> <span id="receiptFreq">One-Time</span></div>
+                <div><strong>Ministry Fund:</strong> <span id="receiptFund">General Tithes &amp; Offerings</span></div>
+              </div>
+              <button type="button" id="resetDonationBtn" class="btn btn--dark btn--sm">
+                Test Another Amount
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <p class="giving-mail-sub">
+          Prefer to mail an offering? Send checks to <strong>PO Box 611, Woodburn, OR 97071</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- 6. Cream #FBF5F0 Interactive Mission Tabs (Faithful Step 55) -->
+    <section class="section section--cream" id="beliefs">
+      <div class="container">
+        <div class="tabs-header-row">
+          <h2>
+            Connect with our church now.<br />
+            <span class="text-green">Discover faith, hope, and truth</span><br />
+            Grow together in community
+          </h2>
+          <a href="#visit" class="tabs-journey-link">Ready to visit this Sunday?</a>
+        </div>
+
+        <div class="tabs-split">
+          <div class="underline-tabs" role="tablist" aria-label="Church Life Tabs">
+            <button type="button" class="underline-tab-btn is-active" role="tab" aria-selected="true" data-tab-target="worship">
+              Worship service &amp; preaching
+            </button>
+            <button type="button" class="underline-tab-btn" role="tab" aria-selected="false" data-tab-target="covenant">
+              Church covenant &amp; care
+            </button>
+            <button type="button" class="underline-tab-btn" role="tab" aria-selected="false" data-tab-target="confession">
+              1689 London Confession
+            </button>
+            <button type="button" class="underline-tab-btn" role="tab" aria-selected="false" data-tab-target="visitors">
+              What first-time visitors see
+            </button>
+            <button type="button" class="underline-tab-btn" role="tab" aria-selected="false" data-tab-target="prayer">
+              Prayer &amp; community support
+            </button>
+          </div>
+
+          <div>
+            <div class="tab-panel is-active" role="tabpanel" data-tab-panel="worship">
+              <div class="tab-photo">
+                <img src="assets/images/hero-sanctuary.jpg" alt="Christ Baptist Church Sunday worship sanctuary" />
+              </div>
+              <h3>Traditional Sunday Worship at 10:30 AM</h3>
+              <p>
+                Every Sunday morning at 10:30 AM we gather at 2785 C Street in Hubbard for a reverent,
+                traditional service incorporating Bible readings, congregational singing, prayer, and
+                exegetical preaching.
+              </p>
+              <button type="button" class="btn btn--ochre btn--sm" data-open-modal="visitModal">Plan Your Visit</button>
+            </div>
+
+            <div class="tab-panel" role="tabpanel" data-tab-panel="covenant">
+              <div class="tab-photo">
+                <img src="assets/images/about-fellowship.jpg" alt="Church fellowship around open Bible" />
+              </div>
+              <h3>Walking Together in Brotherly Love</h3>
+              <p>
+                Our Church Covenant outlines how we care affectionately for one another, pray together,
+                raise households in the nurture of the Lord, and sustain a faithful evangelical ministry.
+              </p>
+              <button type="button" class="btn btn--ochre btn--sm" data-open-modal="covenantModal">Read Full Covenant</button>
+            </div>
+
+            <div class="tab-panel" role="tabpanel" data-tab-panel="confession">
+              <div class="tab-photo">
+                <img src="assets/images/about-fellowship.jpg" alt="Study Bible open on timber table" />
+              </div>
+              <h3>Historic Reformed Baptist Doctrine</h3>
+              <p>
+                We affirm the 1677/89 Second London Baptist Confession of Faith—holding firmly to the
+                authority of Scripture, salvation by grace alone through faith in Christ, and believer’s baptism.
+              </p>
+              <button type="button" class="btn btn--ochre btn--sm" data-open-modal="confessionModal">Explore Confession</button>
+            </div>
+
+            <div class="tab-panel" role="tabpanel" data-tab-panel="visitors">
+              <div class="tab-photo">
+                <img src="assets/images/community-welcome.jpg" alt="Warm greeting at front doors of church" />
+              </div>
+              <h3>A Warm, Unhurried Welcome</h3>
+              <p>
+                Park comfortably right at 2785 C Street in Hubbard a few minutes before 10:30 AM. You
+                won’t be singled out or pressured—just warmly greeted and welcomed into worship.
+              </p>
+              <button type="button" class="btn btn--ochre btn--sm" data-open-modal="visitModal">Let Us Expect You</button>
+            </div>
+
+            <div class="tab-panel" role="tabpanel" data-tab-panel="prayer">
+              <div class="tab-photo">
+                <img src="assets/images/community-welcome.jpg" alt="Church family gathering outside" />
+              </div>
+              <h3>Prayer &amp; Pastoral Connection</h3>
+              <p>
+                Need prayer or have questions about Christianity before Sunday? Call 503-732-6491 or
+                use our contact form below to reach church leadership directly.
+              </p>
+              <a href="#visit" class="btn btn--ochre btn--sm">Send a Prayer Request</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Horizontal Weekly Gatherings Rows (Faithful Step 59) -->
+    <section class="section">
+      <div class="container">
+        <div class="eyebrow">Gather &amp; Grow</div>
+        <h2 class="h2-display">Weekly worship &amp; church life</h2>
+
+        <div class="rows-list">
+          <article class="schedule-row">
+            <div class="schedule-thumb">
+              <img src="assets/images/hero-sanctuary.jpg" alt="Sunday Morning Worship Service" />
+            </div>
+            <div class="schedule-time">Every Sunday @ 10:30 am</div>
+            <div class="schedule-info">
+              <h3>Sunday Morning Worship Service</h3>
+              <p>Traditional worship with Bible readings, singing, prayer, and exegetical preaching.</p>
+            </div>
+            <button type="button" class="btn btn--ochre btn--sm" data-open-modal="visitModal">
+              Plan a Visit
+            </button>
+          </article>
+
+          <article class="schedule-row">
+            <div class="schedule-thumb">
+              <img src="assets/images/about-fellowship.jpg" alt="Biblical teaching and church covenant study" />
+            </div>
+            <div class="schedule-time">Throughout the Year</div>
+            <div class="schedule-info">
+              <h3>Biblical Teaching &amp; Confessional Fellowship</h3>
+              <p>Growing in our knowledge of Christianity, Scripture, and the 1689 Baptist Confession.</p>
+            </div>
+            <button type="button" class="btn btn--ochre btn--sm" data-open-modal="confessionModal">
+              Read More
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Full-Width Rounded Photo Banner (Faithful Step 61) -->
+    <section class="photo-cta-section">
+      <div class="container">
+        <div class="photo-cta-banner">
+          <img
+            src="assets/images/community-welcome.jpg"
+            alt="Welcoming congregation greeting newcomers outside church"
+          />
+          <div class="photo-cta-overlay" aria-hidden="true"></div>
+          <div class="photo-cta-content">
+            <h2>Join our Christ Baptist family and grow with us this Sunday</h2>
+            <button type="button" class="btn btn--ochre" data-open-modal="visitModal">
+              Plan Your Visit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Giant Sage-Green Marquee Ticker (Faithful Step 65) -->
+    <div class="marquee-band" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>Walk in faith. Live with purpose.</span>
+          <span>&bull;</span>
+          <span>Preaching God’s Word in Hubbard, Oregon.</span>
+          <span>&bull;</span>
+        </div>
+        <div class="marquee-group">
+          <span>Walk in faith. Live with purpose.</span>
+          <span>&bull;</span>
+          <span>Preaching God’s Word in Hubbard, Oregon.</span>
+          <span>&bull;</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10. Cream #FBF5F0 Contact Strip + Quick Message & Directions (Faithful Step 65-67) -->
+    <section class="section section--cream" id="visit">
+      <div class="container">
+        <div class="contact-center-header">
+          <div class="eyebrow">Reach Out to Us Today</div>
+          <h2>Looking to visit or connect? Let us help!</h2>
+          <p>
+            At Christ Baptist Church, we welcome your questions and look forward to greeting you at
+            our Sunday worship service in Hubbard.
+          </p>
+        </div>
+
+        <div class="contact-cards-grid">
+          <div class="contact-white-card">
+            <div class="contact-icon-box" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <h3>Our contact &amp; mail</h3>
+            <p>Reach us online or by mail at PO Box 611, Woodburn, OR 97071</p>
+            <a href="mailto:jeffg60@gmail.com" class="contact-card-link">jeffg60@gmail.com</a>
+          </div>
+
+          <div class="contact-white-card">
+            <div class="contact-icon-box" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                <rect x="6" y="2" width="12" height="20" rx="2" ry="2" />
+                <line x1="12" y1="18" x2="12.01" y2="18" />
+              </svg>
+            </div>
+            <h3>Give us a call</h3>
+            <p>Sundays at 10:30 AM &middot; Call anytime with questions</p>
+            <a href="tel:5037326491" class="contact-card-link">503-732-6491</a>
+          </div>
+
+          <div class="contact-white-card">
+            <div class="contact-icon-box" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <h3>Come see us</h3>
+            <p>2785 C Street, Hubbard, OR 97032</p>
+            <a
+              href="https://maps.google.com/?q=2785+C+Street+Hubbard+OR+97032"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-card-link"
+            >
+              View on Google Maps
+            </a>
+          </div>
+        </div>
+
+        <div class="visit-split">
+          <div class="form-white-card">
+            <h3>Send a Quick Message</h3>
+            <p>Visitors can reach out directly from the homepage without decoding obfuscated emails.</p>
+            <form id="contactForm">
+              <div class="form-row">
+                <div>
+                  <label class="form-label" for="contactName">Your Name</label>
+                  <input type="text" id="contactName" class="input-field" placeholder="Full name" required />
+                </div>
+                <div>
+                  <label class="form-label" for="contactEmail">Email or Phone</label>
+                  <input type="text" id="contactEmail" class="input-field" placeholder="you@example.com" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contactMessage">Message or Prayer Request</label>
+                <textarea id="contactMessage" class="input-field" placeholder="How can we serve or welcome you?" required></textarea>
+              </div>
+              <button type="submit" class="btn btn--ochre btn--sm" style="width: 100%;">
+                Send Message
+              </button>
+              <div class="form-status" id="contactStatus" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <div class="map-white-card">
+            <iframe
+              class="map-frame"
+              title="Christ Baptist Church at 2785 C Street, Hubbard, OR 97032"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=2785+C+Street,+Hubbard,+OR+97032&output=embed"
+            ></iframe>
+            <div class="map-footer">
+              <div>
+                <strong>2785 C Street, Hubbard, OR 97032</strong>
+                <span>Sunday Worship at 10:30 AM</span>
+              </div>
+              <a
+                href="https://maps.google.com/?q=2785+C+Street+Hubbard+OR+97032"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--dark btn--sm"
+              >
+                Directions
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Full-Width Ochre Accent Bar (Faithful Step 67) -->
+    <section class="ochre-bar">
+      <p>
+        “May the grace of the Lord Jesus Christ, and the love of God, and the fellowship of the Holy Spirit be with us all. Amen.”
+      </p>
+    </section>
+  </main>
+
+  <!-- 12. Dark #3B3830 4-Column Footer (Faithful Step 67) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#top" class="brand">
+            <span class="brand-mark" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M12 2v20" />
+                <path d="M6 9h12" />
+                <circle cx="12" cy="9" r="7" stroke-opacity="0.45" />
+              </svg>
+            </span>
+            <span class="brand-name">Christ Baptist Church</span>
+          </a>
+          <p class="footer-bio">
+            A small Baptist church in Hubbard, Oregon, devoted to preaching God’s Word, traditional
+            Sunday worship, and ministering to our community.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Links</h4>
+          <ul class="footer-links">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#welcome">About Us</a></li>
+            <li><a href="#worship">Services</a></li>
+            <li><a href="#give">Donation</a></li>
+            <li><a href="#visit">Plan a Visit</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Faith</h4>
+          <ul class="footer-links">
+            <li><button type="button" data-open-modal="covenantModal">Church Covenant</button></li>
+            <li><button type="button" data-open-modal="confessionModal">1689 Confession</button></li>
+            <li><a href="#beliefs">Sunday Worship</a></li>
+            <li><button type="button" data-open-modal="visitModal">First-Time Visitors</button></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:5037326491">503-732-6491</a></li>
+            <li>
+              <a
+                href="https://maps.google.com/?q=2785+C+Street+Hubbard+OR+97032"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                2785 C Street, Hubbard, OR 97032
+              </a>
+            </li>
+            <li>Mail: PO Box 611, Woodburn, OR 97071</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Christ Baptist Church &middot; Hubbard, Oregon.</span>
+        <span>All Rights Reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button type="button" class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+  <!-- MODAL 1: Plan a Visit -->
+  <div class="modal-backdrop" id="visitModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="visitModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="visitModalTitle">Plan a Visit This Sunday</h3>
+        <button type="button" class="modal-close" data-close-modal aria-label="Close modal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p style="margin-bottom: 16px;">
+          Join us every <strong>Sunday at 10:30 AM</strong> at <strong>2785 C Street, Hubbard, OR 97032</strong>.
+        </p>
+        <form id="visitForm">
+          <div class="form-row">
+            <div>
+              <label class="form-label" for="visitorName">Your Name</label>
+              <input type="text" id="visitorName" class="input-field" placeholder="e.g., John &amp; Sarah" required />
+            </div>
+            <div>
+              <label class="form-label" for="visitorContact">Email or Phone</label>
+              <input type="text" id="visitorContact" class="input-field" placeholder="Best way to reach you" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label class="form-label" for="visitorDate">Sunday You Plan to Visit</label>
+              <input type="date" id="visitorDate" class="input-field" />
+            </div>
+            <div>
+              <label class="form-label" for="visitorCount">Party Size</label>
+              <select id="visitorCount" class="input-field">
+                <option value="1">Just me (1)</option>
+                <option value="2">2 people</option>
+                <option value="3-4">Family (3–4)</option>
+                <option value="5+">Larger family (5+)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="visitorNotes">Questions or Prayer Requests?</label>
+            <textarea id="visitorNotes" class="input-field" placeholder="Anything we can help with beforehand..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--ochre btn--sm" style="width: 100%;">Confirm My Visit</button>
+          <div class="form-status" id="visitStatus" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: Full Church Covenant -->
+  <div class="modal-backdrop" id="covenantModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="covenantModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="covenantModalTitle">Our Church Covenant</h3>
+        <button type="button" class="modal-close" data-close-modal aria-label="Close modal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Having, as we trust, been brought by Divine Grace to repent and believe in the Lord Jesus Christ
+          and to give up ourselves to Him, and having been baptized by immersion upon our profession of faith,
+          in the name of the Father and of the Son and of the Holy Spirit, we do now, relying on His gracious
+          aid, solemnly and joyfully renew our covenant with each other.
+        </p>
+        <ul class="covenant-list">
+          <li>We will work and pray for the unity of the Spirit in the bond of peace.</li>
+          <li>
+            We will walk together in brotherly love, as becomes the members of a Christian Church; exercise
+            an affectionate care and watchfulness over each other and faithfully admonish and entreat one
+            another as occasion may require.
+          </li>
+          <li>We will not forsake the assembling of ourselves together, nor neglect to pray for ourselves and others.</li>
+          <li>
+            We will endeavor to bring up such as may at any time be under our care, in the nurture and
+            admonition of the Lord, and by a pure and loving example to seek the salvation of our family and friends.
+          </li>
+          <li>We will rejoice at each other’s happiness and endeavor with tenderness and sympathy to bear each other’s burdens and sorrows.</li>
+          <li>
+            We will seek, by Divine aid, to live carefully in the world, denying ungodliness and worldly lusts,
+            and remembering that, as we have been voluntarily buried by baptism and raised again from the symbolic
+            grave, so there is on us a special obligation now to lead a new and holy life.
+          </li>
+          <li>
+            We will work together for the continuance of a faithful evangelical ministry in this church, as we
+            sustain its worship, ordinances, discipline, and doctrines.
+          </li>
+          <li>
+            We will contribute cheerfully and regularly to the support of the ministry, the expenses of the
+            church, the relief of the poor, and the spread of the Gospel through all nations.
+          </li>
+          <li>
+            We will, when we move from this place, as soon as possible unite with some other church where we
+            can carry out the spirit of this covenant and the principles of God’s Word.
+          </li>
+        </ul>
+        <p style="font-weight: 600; color: var(--text-dark);">
+          May the grace of the Lord Jesus Christ, and the love of God, and the fellowship of the Holy Spirit
+          be with us all. Amen.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 3: 1689 London Confession -->
+  <div class="modal-backdrop" id="confessionModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="confessionModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="confessionModalTitle">1689 Second London Baptist Confession</h3>
+        <button type="button" class="modal-close" data-close-modal aria-label="Close modal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p style="margin-bottom: 14px;">
+          Christ Baptist Church holds to the <strong>Second London Baptist Confession of Faith (1677/89)</strong>,
+          a classic 32-chapter statement of Reformed Baptist theology rooted in Holy Scripture.
+        </p>
+        <p style="margin-bottom: 18px;">
+          Rather than redirecting visitors off the site without warning, this preview keeps visitors
+          grounded on your church site while offering the full historic document when desired.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+          <a
+            href="https://www.ccel.org/creeds/bcf/bcf.htm"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--ochre btn--sm"
+          >
+            Read Full 32 Chapters (CCEL) &rarr;
+          </a>
+          <button type="button" class="btn btn--outline-dark btn--sm" data-close-modal>
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
